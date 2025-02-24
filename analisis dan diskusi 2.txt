@@ -1,0 +1,27 @@
+1. Bagaimana kinerja model dalam mendeteksi warna?
+Keakuratan model dalam mengenali warna bergantung pada berbagai faktor, termasuk kualitas dataset, jumlah sampel, pemilihan parameter K dalam KNN, serta metode ekstraksi fitur yang diterapkan. Jika dataset memiliki variasi warna dan pencahayaan yang cukup, model dapat mengidentifikasi warna dengan tingkat akurasi yang tinggi. Namun, jika terdapat warna yang sangat mirip, model mungkin mengalami kesulitan dalam membedakannya.
+
+2. Bagaimana pengaruh penambahan jumlah dataset terhadap akurasi?
+Secara umum, menambah jumlah dataset dapat meningkatkan akurasi model karena lebih banyak sampel memungkinkan model memahami pola warna dengan lebih baik. Namun, jika data tambahan mengandung banyak noise atau distribusinya tidak merata, justru dapat menyebabkan penurunan akurasi.
+
+3. Bagaimana cara meningkatkan kinerja model klasifikasi?
+Optimasi parameter K → Menentukan nilai K yang optimal menggunakan metode seperti cross-validation.
+Normalisasi data → Memastikan fitur warna telah dinormalisasi agar perhitungan jarak dalam KNN lebih akurat.
+Penambahan dataset → Meningkatkan jumlah sampel dengan variasi warna yang lebih luas untuk mengurangi bias model.
+Feature engineering → Menggunakan representasi warna yang lebih informatif, seperti HSV dibandingkan dengan RGB.
+Menerapkan metode lain → Jika KNN kurang efektif, dapat mempertimbangkan algoritma lain seperti SVM atau CNN.
+
+Diskusi
+1. Apa keunggulan Machine Learning dibandingkan metode berbasis aturan (rule-based)?
+Lebih fleksibel → ML dapat mempelajari pola dari data tanpa perlu aturan manual yang kompleks.
+Mampu mengenali pola kompleks → ML dapat mendeteksi hubungan yang sulit didefinisikan dengan aturan eksplisit.
+Mudah beradaptasi → Model ML dapat diperbarui dengan data baru tanpa perlu melakukan perubahan kode secara menyeluruh.
+2. Bagaimana integrasi Machine Learning dalam sistem kendali?
+Otomatisasi deteksi warna dalam robotika → Robot dapat mengenali objek berdasarkan warna secara otomatis.
+Pengendalian kualitas di industri manufaktur → ML dapat digunakan untuk mendeteksi cacat warna pada produk.
+Sistem pengenalan warna dalam visi komputer → Diterapkan pada kendaraan otonom atau sistem pengawasan berbasis visual.
+3. Apa tantangan dalam penerapan Machine Learning pada sistem real-time?
+Latensi tinggi → Prediksi harus dilakukan dengan cepat agar dapat digunakan secara langsung.
+Perubahan kondisi pencahayaan → Warna dapat tampak berbeda tergantung pencahayaan, sehingga diperlukan teknik preprocessing yang baik.
+Keterbatasan perangkat keras → Model ML yang kompleks membutuhkan daya komputasi tinggi.
+Risiko overfitting → Model dapat berkinerja baik pada data pelatihan tetapi kurang optimal dalam situasi nyata.
